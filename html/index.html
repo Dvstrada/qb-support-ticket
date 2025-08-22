@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="supportContainer" class="hidden">
+    <div id="header">
+      <h3>Soporte</h3>
+      <button id="btnClose">X</button>
+    </div>
+    <button id="btnNewTicket">Nuevo Ticket</button>
+    <div id="ticketForm" class="hidden">
+      <label>Asunto:</label>
+      <input type="text" id="subject" placeholder="Escribe el asunto...">
+      <label>Descripción:</label>
+      <textarea id="description" placeholder="Describe el problema..." rows="3"></textarea>
+      <div class="form-buttons">
+        <button id="btnSubmitTicket">Enviar Ticket</button>
+        <button id="btnCancelTicket">Cancelar</button>
+      </div>
+    </div>
+    <div id="ticketList"></div>
+    <div id="ticketView" class="hidden">
+      <h4 id="ticketSubject"></h4>
+      <p id="ticketDescription"></p>
+      <p>Status: <span id="ticketStatus"></span></p>
+      <p>Asignado a: <span id="ticketAssigned"></span></p>
+      <div id="messages"></div>
+      <div id="commentArea" class="hidden">
+        <textarea id="comment" placeholder="Escribe un comentario..." rows="3"></textarea>
+        <button id="btnSendComment">Enviar Comentario</button>
+      </div>
+      <div id="adminActions" class="hidden">
+        <button id="btnClaim">Tomar Ticket</button>
+        <button id="btnCloseTicket">Cerrar Ticket</button>
+      </div>
+      <button id="btnBack">Volver</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
