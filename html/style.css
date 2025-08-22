@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#supportContainer {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 350px;
+  height: calc(100% - 100px);
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 10px;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header h3 {
+  margin: 0;
+}
+
+#btnClose {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#btnNewTicket {
+  margin-top: 5px;
+  width: 100%;
+  padding: 6px;
+  background: #2c7be5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#ticketForm label {
+  margin-top: 5px;
+  display: block;
+}
+
+#ticketForm input,
+#ticketForm textarea {
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  padding: 6px;
+  border: none;
+  border-radius: 2px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  flex: 1;
+  margin-right: 5px;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#btnSubmitTicket {
+  background: #28a745;
+}
+
+#btnCancelTicket {
+  background: #dc3545;
+}
+
+#ticketList .ticket-item {
+  border-bottom: 1px solid #444;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+#ticketList .ticket-item:hover {
+  background: #3d3d3d;
+}
+
+#ticketView {
+  margin-top: 10px;
+}
+
+#messages {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #444;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#messages .message {
+  margin-bottom: 4px;
+}
+
+#messages .author {
+  font-weight: bold;
+}
+
+#commentArea textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 6px;
+  border: none;
+  border-radius: 2px;
+}
+
+#btnSendComment {
+  width: 100%;
+  padding: 6px;
+  background: #17a2b8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#adminActions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#adminActions button {
+  flex: 1;
+  margin-right: 5px;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#btnClaim {
+  background: #ffc107;
+}
+
+#btnCloseTicket {
+  background: #dc3545;
+}
+
+#btnBack {
+  margin-top: 5px;
+  width: 100%;
+  padding: 6px;
+  background: #6c757d;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
